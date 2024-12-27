@@ -45,7 +45,6 @@ const server = createServer(async (req, res) => {
     return
   }
     const response = await fetch(`${options.origin}${req.url}`)
-    console.log("+++++++++++++++++",response)
 
     const data = await response.text();
 
